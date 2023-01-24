@@ -117,7 +117,7 @@ cat ./-file07
 
 > lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
-### level 6
+### level 6   ( 5 - > 6 )
 
 > ssh bandit5@bandit.labs.overthewire.org -p 2220
 
@@ -137,8 +137,46 @@ ls maybehere*/**
 
 ls maybehere*/** -al # to check human readable
 
+mkdir /tmp/jjjj
+
+cp -r * /tmp/jjjj
+
+cd /tmp/jjjj
+
+find -executable
+
+delete all the files showing
 
 
+```
+
+```
+
+ls */.* -al -S | grep 1033
+
+```
+
+> P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
+
+### level 7  ( 6 -> 7 )
+
+> ssh bandit6@bandit.labs.overthewire.org -p 2220
+
+> P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
+```
+
+
+
+
+
+
+
+
+### level 8 
+
+> 
 
 
 
