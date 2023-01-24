@@ -12,18 +12,30 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 > password = bandit0
 
 
-### level 1
+### level 0 -> 1
+
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+
+>
 
 ```
 
 ls
 cat readme
 
-NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
-
 ```
 
-### level 2
+> NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
+
+
+### level 1 -> 2
+
+> ssh bandit2@bandit.labs.overthewire.org -p 2220
+
+
+> NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
 
 ```
 
@@ -42,5 +54,91 @@ cat file
 ```
 
 > rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+### level 3
+
+> ssh bandit2@bandit.labs.overthewire.org -p 2220
+
+> rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+```
+ls
+
+cat spaces\ in\ this\ filename
+
+```
+
+> aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+
+### level 4
+
+> ssh bandit3@bandit.labs.overthewire.org -p 2220
+
+> aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+```
+
+cd inhere/
+
+ls -a
+
+cat .hidd*
+
+
+```
+
+> 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+
+
+### level 5
+
+> ssh bandit4@bandit.labs.overthewire.org -p 2220
+
+> 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+
+
+```
+
+ls 
+
+cd inhere
+
+ls
+
+```
+> -file07 # is the file containing the password
+
+``` 
+
+cat ./-file07
+
+``` 
+
+> lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
+### level 6
+
+> ssh bandit5@bandit.labs.overthewire.org -p 2220
+
+> lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
+*hint human-readable
+1033 bytes in size
+not executable*
+
+
+```
+ls
+
+cd inhere/
+
+ls maybehere*/**
+
+ls maybehere*/** -al # to check human readable
+
+
+
+
 
 
