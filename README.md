@@ -37,6 +37,8 @@ cat readme
 > NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
 
+1. 0ld
+
 ```
 
 ls   # to list the files 
@@ -51,9 +53,23 @@ mv - file
 
 cat file
 
+
 ```
 
 > rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+2. New 
+```
+$ ls
+-
+$ cat ./-
+
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+```
+
+
+
 
 ### level 3
 
@@ -61,14 +77,28 @@ cat file
 
 > rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 
+1. Method 1
 ```
-ls
+$ ls
 
-cat spaces\ in\ this\ filename
+$ cat spaces\ in\ this\ filename
 
 ```
 
 > aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+2. Method 2
+
+```
+
+$ ls 
+spaces in this filename
+
+$ cat "spaces in this filename"
+aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+```
+
 
 
 ### level 4
@@ -127,35 +157,38 @@ cat ./-file07
 1033 bytes in size
 not executable*
 
-
 ```
-ls
+$ ls
+maybehere00  maybehere03  maybehere06  maybehere09  maybehere12  maybehere15  maybehere18
+maybehere01  maybehere04  maybehere07  maybehere10  maybehere13  maybehere16  maybehere19
+maybehere02  maybehere05  maybehere08  maybehere11  maybehere14  maybehere17
+$ cd maybehere07
+$ ls -al 
+total 56
+drwxr-x---  2 root bandit5 4096 Apr 23 18:04 .
+drwxr-x--- 22 root bandit5 4096 Apr 23 18:04 ..
+-rwxr-x---  1 root bandit5 3663 Apr 23 18:04 -file1
+-rwxr-x---  1 root bandit5 3065 Apr 23 18:04 .file1
+-rw-r-----  1 root bandit5 2488 Apr 23 18:04 -file2
+-rw-r-----  1 root bandit5 1033 Apr 23 18:04 .file2
+-rwxr-x---  1 root bandit5 3362 Apr 23 18:04 -file3
+-rwxr-x---  1 root bandit5 1997 Apr 23 18:04 .file3
+-rwxr-x---  1 root bandit5 4130 Apr 23 18:04 spaces file1
+-rw-r-----  1 root bandit5 9064 Apr 23 18:04 spaces file2
+-rwxr-x---  1 root bandit5 1022 Apr 23 18:04 spaces file3
 
-cd inhere/
 
-ls maybehere*/**
+$ cat .file2
 
-ls maybehere*/** -al # to check human readable
-
-mkdir /tmp/jjjj
-
-cp -r * /tmp/jjjj
-
-cd /tmp/jjjj
-
-find -executable
-
-delete all the files showing
-
-
+P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 ```
-or 
 
-```
 
-ls */.* -al -S | grep 1033
 
-```
+
+
+
+
 
 > P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
@@ -175,7 +208,7 @@ ls */.* -al -S | grep 1033
 
 ```
 $ ls -a
-
+```
 .  ..  .bash_logout  .bashrc  .profile
 
 $ cd ..
@@ -263,6 +296,8 @@ total 4108
    
    
 
+----- 
+27 May - 12 noon
 
 
 
